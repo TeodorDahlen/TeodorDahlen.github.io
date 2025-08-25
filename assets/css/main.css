@@ -2816,10 +2816,10 @@ input, select, textarea {
 			padding: 0;
 		}
 
-		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
-		}
+.wrapper.style1 {
+	background-image: linear-gradient(#354b2e, #354b2e);
+	color: #c8ece9;
+}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
 				color: #ffffff;
@@ -2980,7 +2980,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #354b2e;
 			color: #d3d4e4;
 		}
 
@@ -3034,7 +3034,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #505393;
+					background: #354b2e;
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
