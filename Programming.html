@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
+		<title>Programming</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="Programming.html">Programming</a></li>
-											<li><a href="Art.html">VFX/Materials/Art</a></li>
+											<!--<li><a href="Art.html">VFX/Materials/Art</a></li>-->
 											<li><a href="AboutMe.html">About me</a></li>
 										</ul>
 									</div>
@@ -60,93 +60,118 @@
 
 								<div class="image"><img src="images/Sunseed.gif" alt="" /></div>
 								<p>
-									One thing i was very happy with was the Camera system. In the begining the game felt very static, this was becouse of how restricted the players were.
-									We decided that we wanted to let the players explore more of the enviroment and be able to chose what direction to travel, which would not be possible with
+									One thing I was very happy with was the Camera system. In the beginning the game felt very static, this was because of how restricted the players were.
+									We decided that we wanted to let the players explore more of the environment and be able to choose what direction to travel, which would not be possible with
 									a locked camera.
 									<br /><br />
-									We wanted the new system to feel free but also restrict the player to stay on trac, and also require teamwork.
+									We wanted the new system to feel free but also restrict the player to stay on track, and also require teamwork.
 									<br />
-									The system had 3 parts that it was accounting for. The players, its ancor and points of intresst.
-									<br />
-									<br />
-									The camera had and ancor, it is were it wants to be.
+									The system had 3 parts that it was accounting for. The players, its anchor and points of interest.
 									<br />
 									<br />
-									All players can affect its postion becouse they all have a gravitational pull, that gets weaker the further away they are from the ancor.
-									When players are togther the gravitaion pulls the camera towards them, when players are split,
-									it tries to fit everyone inside the camera, increaeing the field of view to a certain point.
+									The camera had an anchor, it is where it wants to be.
 									<br />
 									<br />
-									Points of intresst will create a strong gravitational pull when any player are close to it.
+									All players can affect its position because they all have a gravitational pull, that gets weaker the further away they are from the anchor.
+									When players are together the gravitation pulls the camera towards them, when players are split,
+									it tries to fit everyone inside the camera, increasing the field of view to a certain point.
+									<br />
+									<br />
+									Points of interest will create a strong gravitational pull when any player is close to it.
+									<br />
+									<div class="image"><img src="images/Code5.png" alt="" /></div>
+									<div class="image"><img src="images/Code1.png" alt="" /></div>
+
+									 <br /> This was the single largest change to the game to make it more fun. 
+									<br /> We never wanted the game to be open world, instead we wanted the players to feel like it was open, even if they walk a linear path. 
+									The new camera now allowed us to easily create alternate paths and small side quests. 
+									We could also increase the move speed of the players, a change that made the game feel less clunky.
 
 									<br />
-									<br />
-									This was the single largest change to the game to make it more fun.
-									<br />
-									We never wanted the game to be open world, instead we wanted the players to feel like it was open, even if they walk a linar path.
-									The new camera now allowed us to easily create alternate paths and small sidequest. We could also increase the movespeed of the players, a change that made
-									the game feel less cluncky.
-
-									This is simply where we change the camera position towards its new desired location after calculations. 
-									
 
 								</p>
 								<hr />
 
 								<h4>Blueprints - Snowblind</h4>
 								<p>
-									This was are student project towards the end of the first year at YRGO. We wanted to make a survival horror game, but what we got was a bunch of learning
-									expreiences. Making a uniqe games is very hard, but even when you dont succseed, you learn from failure.
-									<br />
-									<div class="image"><img src="images/Snowblind.gif" alt="" /></div>
-									<br />
-									Saying snowblind is a failure is not something i do not agree with, but the game does not hold a standard i am happy with, something that is hard to accept
-									when you are the lead desiger of the game.
-									<br />
-									<br />
-									Large parts of this game was scraped in the final version, but things were also added. My favorite feature, and the most fun, are the skis system.
-									<br />
-									<br />
-									It felt like a joke when i proposed the idea to the group. 3 weeks into a 8 week project it is daring to add a feature that changes most if not all interactions.
-									The game test we had before it always had the same problem, it was not fun enough to just walk around. This made me think and explore how other games made movement fun.
+									This was our student project towards the end of the first year at YRGO.
+									We wanted to make a survival horror game, but what we got was a bunch of learning experiences.
 
-									<br />
-									<br />
-									And so i came up with the idea of skis, they would be an altrantive way to travel larger distances.
-									The skis are made for fun but still somewhat realistic. You can not turn without forward movement, so you have to adjust your speed to make sharper turns.
-									It is also not a constant propultion but instead a small simulation of the arms pushing your forward in intervals.
+									Making a unique game is very hard, but even when you don’t succeed, you learn from failure.
 
-									<br />
-									<br />
-									I also wanted the skis to always be flat with the ground. Using Cross-pruduct math this was accomplished, But knowing what to do, and finding out how
-									in blueprints are two diffrent things. Something that would be easy with C# or C++ was now challanging and felt like a limitation when using Blueprints.
-									<br />
-									<br />
-									If i would redo it, it would be a lot better and take a lot less time, but when using a new workflow like Blueprints it sometimes takes time to learn
-									how it wants to be used, and that is part of what is so fun with game develpoment.
-									<div class="image"><img src="images/Code2.png" alt="" /></div>
-									Above is something that was also needed to applie the right force and restrict the camera movement. It calculates the diffrence in degress
-									between the skis and the camera.
+									<br /> <div class="image"><img src="images/Snowblind.gif" alt="" /></div> <br />
 
+									Saying Snowblind is a failure is not something I agree with, but the game does not hold a standard I am happy with,
+									which is hard to accept when you are the lead designer of the game.
 
-									<br />
-									<br />
-									<br />
-									<h1>Snowblind - Compass</h1>
-									<div class="image"><img src="images/Compass.gif" alt="" /></div>
-									<br />
-									Another problem we came across was that players did not know where to go, which is a fun level design problems in open world games i feel a lot of
-									people underestimate. Our solution for this was the creation of the compass, something that would help the player see what direction the can go if the want to find something
-									<div class="image"><img src="images/Code4.png" alt="" /></div>
-									Making the compass was easy, but showing directions too points of intresst on a % scale and working with Material Shader was harder to get right.
-									The code is rather simple, and what i learnt doing the skis came to use a lot. 
-									<br />
-									<br />
-									The compass is a circle. Where both 0% and 100% is behind the player. 50% is North, 25% is West and 75% is East. 
-									<br />
-									<br />
-									What i did was calculte the diffrence in degress from the players location, and the point of intresst location relative to the north. 
-									And just set the direction element along the same path as the compass.
+									<br /><br />
+
+									Large parts of this game were scrapped in the final version, but things were also added.
+									My favorite feature, and the most fun one, is the skis system.
+
+									<br /><br />
+
+									It felt like a joke when I proposed the idea to the group.
+									Three weeks into an eight-week project, it is daring to add a feature that changes most, if not all, interactions.
+
+									The game tests we had before always had the same problem:
+									it was not fun enough to just walk around.
+									This made me think and explore how other games made movement fun.
+
+									<br /><br />
+
+									And so I came up with the idea of skis.
+									They would be an alternative way to travel larger distances.
+
+									The skis are made for fun but still somewhat realistic.
+									You cannot turn without forward movement, so you have to adjust your speed to make sharper turns.
+
+									It is also not constant propulsion, but instead a small simulation of the arms pushing you forward in intervals.
+
+									<br /><br />
+
+									I also wanted the skis to always be flat with the ground.
+									Using cross-product math this was accomplished, but knowing what to do and finding out how in Blueprints are two different things.
+
+									Something that would be easy with C# or C++ was now challenging and felt like a limitation when using Blueprints.
+
+									<br /><br />
+
+									If I were to redo it, it would be a lot better and take a lot less time.
+									But when using a new workflow like Blueprints it sometimes takes time to learn how it wants to be used,
+									and that is part of what is so fun with game development.
+
+									<br /> <div class="image"><img src="images/Code2.png" alt="" /></div> <br />
+
+									Above is something that was also needed to apply the right force and restrict the camera movement.
+									It calculates the difference in degrees between the skis and the camera.
+
+									<br /><br /><br />
+
+									<h1>Snowblind - Compass</h1> <div class="image"><img src="images/Compass.gif" alt="" /></div> <br />
+
+									Another problem we came across was that players did not know where to go,
+									which is a common level design problem in open-world games that I feel a lot of people underestimate.
+
+									Our solution for this was the creation of the compass,
+									something that would help the player see what direction they could go if they wanted to find something.
+
+									<br /> <div class="image"><img src="images/Code4.png" alt="" /></div> <br />
+
+									Making the compass was easy, but showing directions to points of interest on a percentage scale
+									and working with Material Shader was harder to get right.
+
+									The code is rather simple, and what I learned while making the skis came to use a lot.
+
+									<br /><br />
+
+									The compass is a circle, where both 0% and 100% are behind the player.
+									50% is North, 25% is West, and 75% is East.
+
+									<br /><br />
+
+									What I did was calculate the difference in degrees from the player’s location and the point of interest’s location relative to the north,
+									and just set the direction element along the same path as the compass.
 								</p>
 							</div>
 						</section>
